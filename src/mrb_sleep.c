@@ -59,3 +59,7 @@ void mrb_mruby_sleep_gem_init(mrb_state *mrb)
     sleep = mrb_define_module(mrb, "Sleep");
     mrb_define_class_method(mrb, sleep, "sleep", mrb_f_sleep, ARGS_ANY());
 }
+
+void mrb_mruby_sleep_gem_final(mrb_state *mrb)
+{
+}
